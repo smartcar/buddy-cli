@@ -10,39 +10,37 @@
     "cli",
     "ci/cd"
   ],
+  "homepage": "https://app.buddy.works/smartcar",
+  "bugs": {
+    "url": "https://github.com/smartcar/buddy-cli/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smartcar/buddy-cli"
+  },
+  "license": "MIT",
+  "author": "Buddy Authors",
   "bin": {
     "buddy-cli": "bin/buddy-cli.js"
   },
-  "preferGlobal": true,
   "scripts": {
-    "test": "mocha",
-    "lint": "./node_modules/.bin/eslint ."
-  },
-  "author": "Buddy Authors",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/buddy-works/buddy-cli"
-  },
-  "bugs": {
-    "url": "https://github.com/buddy-works/buddy-cli/issues"
-  },
-  "homepage": "https://buddy.works",
-  "engines": {
-    "node": ">= 6"
+    "lint": "./node_modules/.bin/eslint .",
+    "test": "mocha"
   },
   "dependencies": {
     "chalk": "2.4.1",
     "cliui": "4.1.0",
-    "request": "2.85.0",
-    "yargs": "11.0.0"
+    "request": "^2.88.0",
+    "yargs": "^17.7.2"
   },
   "devDependencies": {
-    "sinon": "5.0.4",
+    "@smartcar/zamboni": "^2.0.2",
     "chai": "4.1.2",
-    "eslint": "4.19.1",
-    "eslint-config-airbnb-base": "12.1.0",
-    "eslint-plugin-import": "2.11.0",
-    "mocha": "5.1.1"
-  }
+    "mocha": "^10.7.3",
+    "sinon": "^17.0.0"
+  },
+  "engines": {
+    "node": ">= 20.13.0"
+  },
+  "preferGlobal": true
 }
